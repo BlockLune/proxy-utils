@@ -20,7 +20,7 @@ Inspired by:
 2. Copy the configuration file:
 
    ```shell
-   cp -r ~/.oh-my-zsh/custom/plugins/proxy-utils/example/.proxy/ ~
+   cp -r ~/.oh-my-zsh/custom/plugins/proxy-utils/example/.proxy/ ~/.proxy/
    ```
 
 3. Update the zsh configuration file:
