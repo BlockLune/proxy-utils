@@ -14,11 +14,11 @@ Inspired by:
 1. Add the module to your Zim configuration file:
 
    ```text
-   # ...
    zmodule BlockLune/proxy-utils
    ```
 
-2. Restart your terminal.
+2. Edit the configuration files in `~/.proxy/` to set your proxy settings. An example configuration is provided in `example/.proxy/`.
+3. Restart your terminal.
 
 ### As an Oh-My-Zsh Plugin
 
@@ -28,7 +28,7 @@ Inspired by:
    git clone --depth=1 https://github.com/BlockLune/proxy-utils.git ~/.oh-my-zsh/custom/plugins/proxy-utils
    ```
 
-2. Copy the configuration file:
+2. Edit the configuration files in `~/.proxy/` to set your proxy settings. Or copy the example configuration as a starting point:
 
    ```shell
    cp -r ~/.oh-my-zsh/custom/plugins/proxy-utils/example/.proxy/ ~/.proxy/
@@ -50,10 +50,10 @@ Inspired by:
    git clone https://github.com/BlockLune/proxy-utils.git --depth=1
    ```
 
-2. Copy the configuration file:
+2. Edit the configuration files in `~/.proxy/` to set your proxy settings. Or copy the example configuration as a starting point:
 
    ```shell
-   cp -r proxy-utils/example/.proxy/ ~
+   cp -r proxy-utils/example/.proxy/ ~/.proxy/
    ```
 
 3. Update your shell configuration file:
