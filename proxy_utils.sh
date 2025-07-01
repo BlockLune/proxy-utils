@@ -1,11 +1,40 @@
 #!/bin/sh
 __proxy_utils_load_variables() {
-  _HTTP_PROXY=$(cat "${HOME}/.proxy/http_proxy")
-  _HTTPS_PROXY=$(cat "${HOME}/.proxy/https_proxy")
-  _FTP_PROXY=$(cat "${HOME}/.proxy/ftp_proxy")
-  _RSYNC_PROXY=$(cat "${HOME}/.proxy/rsync_proxy")
-  _ALL_PROXY=$(cat "${HOME}/.proxy/all_proxy")
-  _NO_PROXY=$(cat "${HOME}/.proxy/no_proxy")
+  if [ -f "${HOME}/.proxy/http_proxy" ]; then
+    _HTTP_PROXY=$(cat "${HOME}/.proxy/http_proxy")
+  else
+    _HTTP_PROXY=""
+  fi
+
+  if [ -f "${HOME}/.proxy/https_proxy" ]; then
+    _HTTPS_PROXY=$(cat "${HOME}/.proxy/https_proxy")
+  else
+    _HTTPS_PROXY=""
+  fi
+
+  if [ -f "${HOME}/.proxy/ftp_proxy" ]; then
+    _FTP_PROXY=$(cat "${HOME}/.proxy/ftp_proxy")
+  else
+    _FTP_PROXY=""
+  fi
+
+  if [ -f "${HOME}/.proxy/rsync_proxy" ]; then
+    _RSYNC_PROXY=$(cat "${HOME}/.proxy/rsync_proxy")
+  else
+    _RSYNC_PROXY=""
+  fi
+
+  if [ -f "${HOME}/.proxy/all_proxy" ]; then
+    _ALL_PROXY=$(cat "${HOME}/.proxy/all_proxy")
+  else
+    _ALL_PROXY=""
+  fi
+
+  if [ -f "${HOME}/.proxy/no_proxy" ]; then
+    _NO_PROXY=$(cat "${HOME}/.proxy/no_proxy")
+  else
+    _NO_PROXY=""
+  fi
 }
 
 __proxy_utils_load_variables
