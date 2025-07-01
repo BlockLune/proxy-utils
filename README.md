@@ -9,12 +9,23 @@ Inspired by:
 
 ## Installation
 
+### As a Zim Module
+
+1. Add the module to your Zim configuration file:
+
+   ```text
+   # ...
+   zmodule BlockLune/proxy-utils
+   ```
+
+2. Restart your terminal.
+
 ### As an Oh-My-Zsh Plugin
 
 1. Clone the repository into the Oh-My-Zsh custom plugins directory:
 
    ```shell
-   git clone https://github.com/BlockLune/proxy-utils.git ~/.oh-my-zsh/custom/plugins/proxy-utils --depth=1
+   git clone --depth=1 https://github.com/BlockLune/proxy-utils.git ~/.oh-my-zsh/custom/plugins/proxy-utils
    ```
 
 2. Copy the configuration file:
@@ -29,7 +40,7 @@ Inspired by:
    plugin=(... proxy-utils)
    ```
 
-4. Restart the terminal.
+4. Restart your terminal.
 
 ### As a Standalone Script
 
